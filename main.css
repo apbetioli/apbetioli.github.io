@@ -1,54 +1,56 @@
 html,
 body {
-  font-size: x-large;
-  font-family: "Press Start 2P";
+  background: rgb(33, 39, 55);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
   height: 100vh;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
 }
 
 main,
 header,
 footer {
   margin: auto;
-  max-width: 1600px;
-  padding: 30px;
+  max-width: 1200px;
+  padding: 20px;
   width: 100%;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-header,
-footer {
-  background: #108de0;
-  color: white;
-}
-
-main p {
-  color: #777;
 }
 
 footer {
   height: 20px;
 }
 
+h1,
+h2,
+p {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #aaa;
+}
+
 section {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 a {
   text-decoration: underline;
+  color: white;
 }
 
-a.nes-btn {
-  text-decoration: none;
+.avatar {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.badge {
+  background: linear-gradient(315deg, white, orange);
+  color: black;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 25px;
 }
 
 .box {
@@ -58,28 +60,30 @@ a.nes-btn {
 .column {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.feature {
-  gap: 10px;
-  margin-top: 40px;
 }
 
 .grow {
   flex-grow: 1;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
+.hero {
+  align-items: center;
+  text-align: center;
 }
 
 .navlinks {
   display: flex;
-  gap: 30px;
+  max-width: 300px;
   list-style: none;
   padding-left: 0;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px gray solid;
 }
 
 .row {
@@ -88,11 +92,26 @@ a.nes-btn {
   gap: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+.text-gradient {
+  background: linear-gradient(315deg, white, orange);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 999px) {
+  html,
+  body {
+    font-size: 1.5rem;
+  }
   .feature {
     flex-direction: column;
   }
-  .navbar {
-    flex-direction: column;
+  .navlinks {
+    max-width: 70%;
+  }
+  .navlinks svg {
+    transform: scale(2);
+    margin-top: 30px;
   }
 }
