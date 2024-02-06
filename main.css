@@ -64,7 +64,13 @@ ul {
 }
 
 .justify-between {
+  display: flex;
   justify-content: space-between;
+}
+
+.preview {
+  width: 100%;
+  max-width: 500px;
 }
 
 .project {
@@ -72,6 +78,9 @@ ul {
   border-radius: 30px;
   margin-top: 30px;
   padding: 30px;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .row {
@@ -88,4 +97,56 @@ ul {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    display: block;
+  }
+}
+
+/* Moving platform animation */
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.platform {
+  position: absolute;
+  animation: movePlatform 8s ease-in-out infinite;
+}
+
+@keyframes movePlatform {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 0;
+    left: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  opacity: 40%;
 }
