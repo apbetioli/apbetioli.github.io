@@ -68,10 +68,10 @@ ul {
 }
 
 .project {
-  margin-top: 30px;
-  padding: 30px;
   border: 1px orange solid;
   border-radius: 30px;
+  margin-top: 30px;
+  padding: 30px;
 }
 
 .row {
