@@ -3,35 +3,15 @@ body {
   background: rgb(33, 39, 55);
   color: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   height: 100vh;
 }
 
-main,
-header,
-footer {
+main {
   margin: auto;
   max-width: 1200px;
   padding: 20px;
-  width: 100%;
-}
-
-footer {
-  height: 20px;
-}
-
-h1,
-h2,
-p {
-  margin-bottom: 10px;
-}
-
-p {
-  color: #aaa;
-}
-
-section {
-  margin-top: 80px;
+  width: 90%;
 }
 
 a {
@@ -39,57 +19,67 @@ a {
   color: white;
 }
 
+h3 svg {
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+p {
+  color: #aaa;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
 .avatar {
   border-radius: 50%;
-  width: 300px;
   height: 300px;
+  width: 300px;
 }
 
 .badge {
   background: linear-gradient(315deg, white, orange);
+  border-radius: 15px;
   color: black;
+  font-size: 0.9rem;
   font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 25px;
-}
-
-.box {
-  width: 30px;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-}
-
-.grow {
-  flex-grow: 1;
+  padding: 5px 15px;
 }
 
 .hero {
-  align-items: center;
   text-align: center;
 }
 
-.navlinks {
+.icons {
   display: flex;
-  max-width: 300px;
-  list-style: none;
-  padding-left: 0;
   justify-content: space-between;
-  width: 100%;
+  margin: 2em auto;
+  max-width: 300px;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .project {
   margin-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px orange solid;
+  padding: 30px;
+  border: 1px orange solid;
+  border-radius: 30px;
 }
 
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
+  align-items: center;
 }
 
 .text-gradient {
@@ -97,21 +87,4 @@ a {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-@media screen and (max-width: 999px) {
-  html,
-  body {
-    font-size: 1.5rem;
-  }
-  .feature {
-    flex-direction: column;
-  }
-  .navlinks {
-    max-width: 70%;
-  }
-  .navlinks svg {
-    transform: scale(2);
-    margin-top: 30px;
-  }
 }
