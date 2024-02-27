@@ -94,7 +94,6 @@ const App = {
       .map(App.createProject)
       .forEach((div) => projectsFragment.appendChild(div));
     App.$.projects.appendChild(projectsFragment);
-    console.log("rendered");
   },
 };
 
