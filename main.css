@@ -24,6 +24,10 @@ h3 svg {
   margin-left: 20px;
 }
 
+img {
+  max-width: 100%;
+}
+
 p {
   color: #aaa;
 }
@@ -52,6 +56,10 @@ ul {
   padding: 5px 15px;
 }
 
+.col {
+  padding: 20px 10px;
+}
+
 .hero {
   text-align: center;
 }
@@ -70,17 +78,26 @@ ul {
 .project {
   border: 1px orange solid;
   border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: row;
   margin-top: 30px;
-  padding: 30px;
+  overflow: hidden;
 }
 
 .row {
   align-items: center;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 1em;
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.screenshot {
+  padding: 20px;
 }
 
 .text-gradient {
@@ -88,4 +105,14 @@ ul {
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .project {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .screenshot {
+    padding: 0;
+  }
 }
