@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
     <title>Alexandre Betioli</title>
     <meta
       name="description"
@@ -24,350 +23,92 @@
 
       gtag("config", "G-1RPGY29WHE");
     </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script defer src="app.js" type="module"></script>
   </head>
   <body>
-    <main>
-      <section id="hero" class="hero">
-        <img alt="Picture of me" src="/pictures/me.webp" class="avatar" />
-        <h1>Hey, I'm <span class="text-gradient">Alexandre Betioli</span></h1>
-        <p>Software Engineer</p>
-        <ul class="icons">
-          <li>
-            <a href="https://github.com/apbetioli" title="GitHub">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="50"
-                height="50"
-                viewBox="0 0 64 64"
-              >
-                <path
-                  fill="#fff"
-                  d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
-                ></path>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/apbetioli" title="LinkedIn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="50"
-                height="50"
-                viewBox="0 0 50 50"
-              >
-                <path
-                  fill="#fff"
-                  d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
-                ></path>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/apbetioli" title="Twitter">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="50"
-                height="50"
-                viewBox="0 0 30 30"
-              >
-                <path
-                  fill="#fff"
-                  d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"
-                ></path>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:apbetioli@gmail.com" title="Email">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="50"
-                height="50"
-                viewBox="0 0 50 50"
-              >
-                <path
-                  fill="#fff"
-                  d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z"
-                ></path>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://docs.google.com/document/d/1rHw9QPGRT3ojec7UZj5wwJbUDgI4uy7X96U22zA5uYE/export?format=pdf"
-              title="Resume"
+    <header class="bg-indigo-500">
+      <nav
+        class="container relative flex items-center justify-between px-6 py-8 mx-auto text-white"
+      >
+        <a href="/" data-link>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-8 h-8 md:w-10 md:h-10 rotate-180"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+            />
+          </svg>
+        </a>
+
+        <button id="mobile-button-menu" class="md:hidden">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
             >
-              <svg
-                width="50"
-                height="50"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="m12.2826 3.81217c-.2389-.05735-.5014-.06217-1.2708-.06217h-1.2118c-.85245 0-1.44669.00058-1.90932.03838-.45388.03709-.71464.10622-.91216.20686-.42336.21571-.76757.55992-.98328.98328-.10064.19752-.16977.45829-.20686.91216-.0378.46263-.03838 1.05687-.03838 1.90932v8.4c0 .8525.00058 1.4467.03838 1.9093.03709.4539.10622.7147.20686.9122.21571.4233.55992.7676.98328.9833.19752.1006.45828.1697.91216.2068.46263.0378 1.05687.0384 1.90932.0384h4.4c.8525 0 1.4467-.0006 1.9093-.0384.4539-.0371.7147-.1062.9122-.2068.4233-.2157.7675-.56.9833-.9833.1006-.1975.1697-.4583.2068-.9122.0378-.4626.0384-1.0568.0384-1.9093v-5.2118c0-.7694-.0048-1.03194-.0622-1.27081-.0551-.22958-.146-.44906-.2694-.65037-.1283-.20946-.3105-.39848-.8546-.94258l-3.1882-3.18822c-.5441-.5441-.7332-.7263-.9426-.85466-.2013-.12336-.4208-.21427-.6504-.26939zm-1.1854-1.56218c.6516-.00019 1.1026-.00032 1.5356.10362.3826.09187.7484.24338 1.0839.44899.3797.23266.6985.55166 1.1591 1.01251l.0604.06045 3.1882 3.18822.0605.06043c.4608.46059.7798.7794 1.0125 1.15906.2056.33552.3571.70132.449 1.08395.1039.43298.1038.88398.1036 1.53558v.0854 5.2118.0321c0 .8129 0 1.4685-.0434 1.9994-.0446.5466-.139 1.0267-.3653 1.471-.3596.7056-.9332 1.2793-1.6388 1.6388-.4443.2263-.9244.3207-1.471.3653-.5309.0434-1.1865.0434-1.9994.0434h-.0321-4.4-.03212c-.81283 0-1.46844 0-1.99935-.0434-.54663-.0446-1.02678-.139-1.47099-.3653-.70561-.3595-1.27929-.9332-1.63881-1.6388-.22634-.4443-.3207-.9244-.36537-1.471-.04337-.5309-.04337-1.1866-.04336-1.9994v-.0321-8.4-.0321c-.00001-.81284-.00001-1.46846.04336-1.99937.04467-.54663.13903-1.02677.36537-1.47099.35952-.70561.9332-1.27929 1.63881-1.63881.44421-.22634.92436-.3207 1.47099-.36536.53091-.04338 1.18653-.04338 1.99937-.04337h.0321 1.2118zm.9028 5.00001c.4142 0 .75.33579.75.75v7.8781c.1969-.0737.4191-.2101.7365-.4796.3539-.3004.7745-.7202 1.3773-1.3229l.6059-.6059c.2929-.2929.7677-.2929 1.0606 0s.2929.7677 0 1.0606l-.6059.6059-.0226.0227c-.5748.5748-1.0384 1.0384-1.4445 1.3831-.4181.355-.8243.6278-1.2985.7818-.7531.2447-1.5645.2447-2.3176 0-.4742-.154-.8804-.4268-1.29851-.7818-.40608-.3447-.86967-.8083-1.44442-1.3831h-.00001l-.0227-.0227-.60589-.6059c-.29289-.2929-.29289-.7677 0-1.0606s.76777-.2929 1.06066 0l.60589.6059c.60277.6027 1.02338 1.0225 1.37728 1.3229.3174.2695.5396.4059.7365.4796v-7.8781c0-.41421.3358-.75.75-.75z"
-                  fill="white"
-                  fill-rule="evenodd"
-                />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-          <div class="col">
-            <div class="row">
-              <a href="https://mariubialli.com.br?utm_source=apbetioli.dev">
-                <h3>mariubialli.com.br</h3>
-              </a>
-              <a
-                href="https://github.com/apbetioli/mariubialli"
-                title="GitHub project"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="50"
-                  height="50"
-                  viewBox="0 0 64 64"
-                >
-                  <path
-                    fill="#fff"
-                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-            <div class="row">
-              <span class="badge">React</span>
-              <span class="badge">Next.js</span>
-              <span class="badge">Typescript</span>
-              <span class="badge">TailwindCSS</span>
-              <span class="badge">Redux-Toolkit Query</span>
-              <span class="badge">AWS S3</span>
-              <span class="badge">Prisma ORM</span>
-              <span class="badge">MongoDB Atlas</span>
-            </div>
-            <p class="row">
-              A SaaS web app where users can watch courses and buy digital
-              assets with 1500+ paying customers.
-            </p>
-          </div>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </span>
+        </button>
+
+        <div
+          id="menu"
+          class="absolute inset-x-0 z-30 w-full px-6 py-8 mt-4 space-y-6 transition-all duration-300 ease-in-out bg-indigo-600 top-16 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:space-y-0 md:-mx-6 md:flex md:items-center"
+          hidden
+        >
           <a
-            href="https://mariubialli.com.br?utm_source=apbetioli.dev"
-            class="screenshot"
+            href="/"
+            class="block text-white transition-colors duration-300 md:px-6 hover:text-indigo-300"
+            data-link
+            >Home</a
           >
-            <img
-              alt="MariUbialli screenshot"
-              src="/pictures/mariubialli.webp"
-            />
-          </a>
-        </div>
-        <div class="project">
-          <div class="col">
-            <div class="row">
-              <a
-                href="https://urutau-kappa.vercel.app?utm_source=apbetioli.dev"
-              >
-                <h3>Urutau</h3>
-              </a>
-              <a
-                href="https://github.com/apbetioli/urutau"
-                title="GitHub project"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="50"
-                  height="50"
-                  viewBox="0 0 64 64"
-                >
-                  <path
-                    fill="#fff"
-                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-            <div class="row">
-              <span class="badge">React</span>
-              <span class="badge">Next.js</span>
-              <span class="badge">Tailwind CSS</span>
-              <span class="badge">Prisma ORM</span>
-              <span class="badge">PostgreSQL</span>
-              <span class="badge">AWS S3</span>
-              <span class="badge">AWS Lambda</span>
-            </div>
-            <p class="row">
-              Give your kids a magical experience every night with the power of
-              AI, and never run out of bedtime stories again. Create delightful
-              tales both in written and audio format for your little ones to
-              enjoy.
-            </p>
-            <p class="row">It uses OpenAI:</p>
-            <p class="row">
-              <span class="badge">gpt-3.5-turbo</span>
-              <span class="badge">dall-e-3</span>
-              <span class="badge">tts-1</span>
-            </p>
-          </div>
           <a
-            href="https://urutau-kappa.vercel.app?utm_source=apbetioli.dev"
-            class="screenshot"
+            href="/about"
+            class="block text-white transition-colors duration-300 md:px-6 hover:text-indigo-300"
+            data-link
           >
-            <img alt="Urutau screenshot" src="/pictures/urutau.webp" />
+            About
           </a>
-        </div>
-        <div class="project">
-          <div class="col">
-            <div class="row">
-              <a href="https://l9studios.com?utm_source=apbetioli.dev">
-                <h3>Moving Platform Maker 2D</h3>
-              </a>
-            </div>
-            <div class="row">
-              <span class="badge">React</span>
-              <span class="badge">Next.js</span>
-              <span class="badge">Tailwind CSS</span>
-              <span class="badge">Nextra</span>
-            </div>
-            <p class="row">
-              A Unity editor extension for game developers to create 2D moving
-              platforms faster, without coding.
-            </p>
-            <p class="row">
-              <a
-                href="https://l9studios.com/docs?utm_source=apbetioli.dev"
-                title="Documentation"
-              >
-                Click here for the documentation.
-              </a>
-            </p>
-            <p class="row">The asset is created with:</p>
-            <p class="row">
-              <span class="badge">C#</span>
-              <span class="badge">Unity</span>
-            </p>
-          </div>
           <a
-            href="https://l9studios.com/docs?utm_source=apbetioli.dev"
-            class="screenshot"
+            href="/projects"
+            class="block text-white transition-colors duration-300 md:px-6 hover:text-indigo-300"
+            data-link
           >
-            <img
-              alt="Moving Platform Maker 2D screenshot"
-              src="/pictures/mpm2d.webp"
-            />
+            Projects
           </a>
-        </div>
-        <div class="project">
-          <div class="col">
-            <div class="row">
-              <a href="https://estimate3d.netlify.app?utm_source=apbetioli.dev">
-                <h3>Estimate 3D</h3>
-              </a>
-              <a
-                href="https://github.com/apbetioli/estimate3d"
-                title="GitHub project"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="50"
-                  height="50"
-                  viewBox="0 0 64 64"
-                >
-                  <path
-                    fill="#fff"
-                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-            <div class="row">
-              <span class="badge">React</span>
-              <span class="badge">Redux-Toolkit</span>
-              <span class="badge">Redux-Persist</span>
-              <span class="badge">Tailwind CSS</span>
-            </div>
-            <p class="row">
-              An app for calculating the costs and selling price of 3D prints.
-            </p>
-          </div>
           <a
-            href="https://estimate3d.netlify.app?utm_source=apbetioli.dev"
-            class="screenshot"
+            href="/contact"
+            class="block text-white transition-colors duration-300 md:px-6 hover:text-indigo-300"
+            data-link
           >
-            <img alt="Estimate3D screenshot" src="/pictures/estimate3d.webp" />
+            Contact
           </a>
         </div>
-        <div class="project">
-          <div class="col">
-            <div class="row">
-              <a href="https://www.youtube.com/@ab3d288">
-                <h3>3D Printing YouTube Channel</h3>
-              </a>
-            </div>
-            <div class="row">
-              <span class="badge">Communication</span>
-              <span class="badge">Teaching</span>
-            </div>
-            <p class="row">
-              Taught 3D printing and how to sell it online (in Portuguese).
-            </p>
-          </div>
-          <a href="https://www.youtube.com/@ab3d288" class="screenshot">
-            <img
-              alt="Youtube channel screenshot"
-              src="/pictures/youtube.webp"
-            />
-          </a>
-        </div>
-      </section>
-      <section id="about">
-        <h1>About me</h1>
-        <p>
-          Software engineer with over a decade of experience in full-stack
-          development specializing in front-end, working with various
-          technologies, projects, and teams. I am passionate about solving
-          problems, building solutions independent of the tech stack, and
-          deleting code. I enjoy mentoring new engineers and learning with them.
-        </p>
-        <p>
-          My first program was a quiz coded in a Windows 98 ".bat" file, created
-          after long hours exploring files on my computer, trying to understand
-          how programs worked, and using a BASIC programming language book as a
-          resource. When I discovered the internet, I began researching how to
-          create my own video game, which led me to program a first-person
-          shooter game where the gun was a fish that shot fireworks. I found my
-          passion in programming.
-        </p>
-        <p>
-          During my carreer, I ventured into co-founding a company, creating a
-          fast site for capturing emails and selling courses. I also fulfilled
-          the roles of content creator, video editor, and marketing specialist.
-        </p>
-        <p>
-          For the past two years, I've been working remotely for an AI company
-          based in Berlin, creating tools for AI developers in the NLP field.
-          What an exciting time to work with AI!
-        </p>
-        <p>
-          Outside work, I've always been learning and trying new things. I
-          started a YouTube channel, owned an e-commerce, built 3D printers, and
-          developed a tool for game creation.
-        </p>
-      </section>
-    </main>
+      </nav>
+    </header>
+
+    <main></main>
+
+    <footer
+      class="flex flex-col items-center py-20 text-white bg-gray-900"
+    ></footer>
   </body>
 </html>
