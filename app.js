@@ -11,12 +11,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
   document
     .getElementById("mobile-button-menu")
-    .addEventListener("click", (event) => {
+    .addEventListener("click", () => {
       app.store.mobileMenuHidden = !app.store.mobileMenuHidden;
     });
 });
 
-window.addEventListener("appmenuchange", (event) => {
+window.addEventListener("appmenuchange", () => {
   if (app.store.mobileMenuHidden) {
     document.getElementById("menu").setAttribute("hidden", app.menuOpen);
   } else {

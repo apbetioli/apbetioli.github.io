@@ -28,32 +28,35 @@ const Router = {
   },
 
   init: () => {
-    //Setup navigation links
+    // Map link events for the navigation menu
     document.querySelectorAll("[data-link]").forEach(bindLink);
 
-    const locationHandler = () => Router.go(location.pathname);
-
-    //Event handler for url navigation
-    window.addEventListener("popstate", locationHandler);
+    //Event handler for user navigation
+    window.addEventListener("popstate", (event) => {
+      if (event.state) {
+        Router.go(event.state.to, false);
+      }
+    });
 
     // Render the initial url
-    locationHandler();
+    Router.go(location.pathname);
   },
 
   go: async (to, addToHistory = true) => {
     app.store.mobileMenuHidden = true;
 
     if (addToHistory) {
-      history.pushState({ to }, null, to);
+      window.history.pushState({ to }, null, to);
     }
 
-    const route = Router.routes[to || "/"] || Router.routes[404];
+    const route = Router.routes[to] || Router.routes[404];
 
     const content = await fetch(route.template).then((res) => res.text());
 
     const main = document.querySelector("main");
     main.innerHTML = content;
 
+    // Map link events in the current page
     main.querySelectorAll("[data-link]").forEach(bindLink);
 
     window.scrollTo(0, 0);
