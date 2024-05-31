@@ -1,3 +1,6 @@
+import { ProjectItem } from "./components/ProjectItem.js";
+import { ProjectList } from "./components/ProjectList.js";
+import { loadData } from "./services/projects.js";
 import Router from "./services/router.js";
 import Store from "./services/store.js";
 
@@ -7,6 +10,7 @@ window.app = {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
+  loadData();
   app.router.init();
 
   document
@@ -23,3 +27,6 @@ window.addEventListener("appmenuchange", () => {
     document.getElementById("menu").removeAttribute("hidden");
   }
 });
+
+customElements.define("project-item", ProjectItem);
+customElements.define("project-list", ProjectList);

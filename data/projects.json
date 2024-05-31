@@ -1,0 +1,40 @@
+[
+  {
+    "name": "mariubialli.com.br",
+    "link": "https://mariubialli.com.br?utm_source=apbetioli.dev",
+    "image": "mariubialli.webp",
+    "description": "A SaaS web app where users can watch courses and buy digital assets with 1500+ paying customers.",
+    "headline": "Next.js - Redux-Toolkit - Typescript - TailwindCSS - MongoDB - AWS S3",
+    "github": "https://github.com/apbetioli/mariubialli"
+  },
+  {
+    "name": "Urutau",
+    "link": "https://urutau-kappa.vercel.app?utm_source=apbetioli.dev",
+    "image": "urutau.webp",
+    "description": "Give your kids a magical experience every night with the power of AI, and never run out of bedtime stories again. Create delightful tales both in written and audio format for your little ones to enjoy.",
+    "headline": "Next.js - TailwindCSS - Prisma - PostgreSQL - Serverless - AWS S3 - AWS Lambda - OpenAI",
+    "github": "https://github.com/apbetioli/urutau"
+  },
+  {
+    "name": "Estimate 3D",
+    "link": "https://estimate3d.netlify.app?utm_source=apbetioli.dev",
+    "image": "estimate3d.webp",
+    "description": "An app for calculating the costs and selling price of 3D prints.",
+    "headline": "React - Redux-Toolkit - Redux-Persist - TailwindCSS",
+    "github": "https://github.com/apbetioli/estimate3d"
+  },
+  {
+    "name": "Moving Platform Maker 2D",
+    "link": "https://l9studios.com?utm_source=apbetioli.dev",
+    "image": "mpm2d.webp",
+    "description": "A Unity editor extension for game developers to create 2D moving platforms faster, without coding.",
+    "headline": "Unity - C#"
+  },
+  {
+    "name": "3D Printing YouTube Channel",
+    "link": "https://www.youtube.com/@ab3d288?utm_source=apbetioli.dev",
+    "image": "youtube.webp",
+    "description": "Taught 3D printing and how to sell it online (in Portuguese).",
+    "headline": "Communication - Teaching"
+  }
+]
