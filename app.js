@@ -1,6 +1,5 @@
 import { ProjectItem } from "./components/ProjectItem.js";
 import { ProjectList } from "./components/ProjectList.js";
-import { loadData } from "./services/projects.js";
 import Router from "./services/router.js";
 import Store from "./services/store.js";
 
@@ -10,7 +9,6 @@ window.app = {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  loadData();
   app.router.init();
 
   document
@@ -20,7 +18,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-window.addEventListener("appmenuchange", () => {
+window.addEventListener("appmenuchanged", () => {
   if (app.store.mobileMenuHidden) {
     document.getElementById("menu").setAttribute("hidden", app.menuOpen);
   } else {
