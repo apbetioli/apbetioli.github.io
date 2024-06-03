@@ -12,7 +12,7 @@
     "link": "https://mariubialli.com.br?utm_source=apbetioli.dev",
     "image": "mariubialli.webp",
     "description": "A SaaS web app where users can watch courses and buy digital assets with 1500+ paying customers.",
-    "headline": "Next.js - Typescript - Redux-Toolkit - MongoDB - AWS S3",
+    "headline": "Next.js - Typescript - Redux-Toolkit - MongoDB - AWS S3 - Stripe",
     "github": "https://github.com/apbetioli/mariubialli"
   },
   {
