@@ -1,4 +1,4 @@
-import { loadData } from "../services/projects";
+import { loadData } from "../services/projects.js";
 
 export class ProjectList extends HTMLElement {
   constructor() {
