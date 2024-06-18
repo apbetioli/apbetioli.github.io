@@ -3,7 +3,7 @@
     "name": "apbetioli.dev",
     "link": "https://apbetioli.dev?utm_source=apbetioli.dev",
     "image": "apbetioli.webp",
-    "description": "My website.",
+    "description": "Single page app built with Vanilla JS.",
     "headline": "Vanilla JS - HTML - TailwindCSS",
     "github": "https://github.com/apbetioli/apbetioli.github.io"
   },
