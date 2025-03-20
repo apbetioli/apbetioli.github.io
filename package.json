@@ -1,0 +1,23 @@
+{
+  "name": "apbetioli.github.io",
+  "version": "1.0.0",
+  "description": "I'm Alexandre Betioli and this is my site.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apbetioli/apbetioli.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apbetioli/apbetioli.github.io/issues"
+  },
+  "homepage": "https://github.com/apbetioli/apbetioli.github.io#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
